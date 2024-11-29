@@ -3,8 +3,8 @@ const express = require("express");
 const {
   validateSchoolInput,
   validateCoordinates,
-} = require("./src/middleware/validation");
-const { addSchool, listSchools } = require("./src/services/schoolService");
+} = require("./middleware/validation");
+const { addSchool, listSchools } = require("./services/schoolService");
 
 const app = express();
 app.use(express.json());
